@@ -38,5 +38,17 @@ def self.genre_count
   genre_hash
 end
 
+def self.album_count
+  album_hash = {}
+  @@albums.each do |album|
+    if album_hash[album]
+      album_hash[album] += 1
+    else
+      album_hash[album] = 1
+    end
+  end
+  album_hash
+end
+
 
 end
