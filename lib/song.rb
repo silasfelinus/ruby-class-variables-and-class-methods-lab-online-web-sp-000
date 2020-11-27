@@ -37,3 +37,6 @@ def self.genre_count
   end
   genre_hash
 end
+
+
+end
